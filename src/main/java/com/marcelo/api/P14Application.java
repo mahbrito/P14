@@ -27,7 +27,9 @@ public class P14Application {
 			senhaEncoded = SenhaUtils.gerarBCrypt("123456");//gera um novo hash pra mesma senha
 			System.out.println("Senha encoded novamente: " + senhaEncoded);//printa de novo
 			
-			System.out.println("Senha válida: " + senhaEncoded);//verifica o ultimo hash passado pra ver se a senha é válida
+			System.out.println("Senha válida: " + SenhaUtils.senhaValida("123456", senhaEncoded)); //ACHO QUE ELE QUIS POR ESSE NO LUGAR DO DE BAIXO
+			
+			//System.out.println("Senha válida: " + senhaEncoded);//verifica o ultimo hash passado pra ver se a senha é válida
 		};
 	}
 
